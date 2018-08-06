@@ -10,6 +10,7 @@ namespace MonContactManager
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
