@@ -10,7 +10,9 @@ namespace MonContactManager
     {
         static void Main(string[] args)
         {
-            
+            OutilsConsole.AfficherMenuPrincipal();
+
+            Console.ReadKey();
         }
     }
 }
