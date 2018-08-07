@@ -9,29 +9,19 @@ namespace MonContactManager
 {
     class OutilsConsole
     {
-        //Méthode pour afficher le Menu Principal
-        public static string AfficherMenuPrincipal()
+        
+        
+        //Methode pour mettre en couleur voulue du texte
+        public static void CouleurTexte(string message, ConsoleColor couleur=ConsoleColor.Gray)
         {
-            Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Blue;
-            //Console.
-            CentrerTexte("CONTACT MANAGER");
-            Console.WriteLine("\n\n");
-            CentrerTexte("Menu");
-            Console.WriteLine("1. Liste des contacts");
-            Console.WriteLine("2. Ajouter un contact");
-            Console.WriteLine("3. Supprimer un contact");
-            Console.WriteLine("4. Trier les contacts");
-            Console.WriteLine("5. Filtrer les contacts");
-            Console.WriteLine("Q. Quitter le programme");
-
-            Console.WriteLine("\nFaites votre choix:");
-            return Console.ReadLine();
+            Console.ForegroundColor = couleur;
+            Console.WriteLine(message);
+            Console.ResetColor();
         }
         
-        // Methode pour sous menu Trier Contacts
+        //Methode pour mettre en couleur voulue du texte et le centrer
 
-
+        
         // Methode pour Trier Contacts suivant nom
 
         // Methode pour Trier Contacts suivant prénom
@@ -46,7 +36,7 @@ namespace MonContactManager
         }
 
         
-        // Méthode pour afficher les messages d'erreur
+        // Méthode pour afficher les messages Erreur en rouge
 
         public static void AfficherMessageErreur(string message)
         {
