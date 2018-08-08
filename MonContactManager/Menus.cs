@@ -12,26 +12,25 @@ namespace MonContactManager
         public static string AfficherMenuPrincipal()
         {
             Console.Clear();
-            OutilsConsole.CentrerTexte("CONTACT MANAGER");
-            Console.WriteLine("\n\n");
-            OutilsConsole.CentrerTexte("Menu");
-            Console.WriteLine("1. Liste des contacts");
-            Console.WriteLine("2. Ajouter un contact");
-            Console.WriteLine("3. Supprimer un contact");
-            Console.WriteLine("4. Trier les contacts");
-            Console.WriteLine("5. Filtrer les contacts");
-            Console.WriteLine("Q. Quitter le programme");
+            Esthetisme.CouleurTexte("CONTACT MANAGER\n\n", ConsoleColor.DarkBlue, true);
+            Esthetisme.CouleurTexte("Menu\n", centre:true );
+            Esthetisme.CouleurTexte("\n1. Liste des contacts");
+            Esthetisme.CouleurTexte("\n2. Ajouter un contact", ConsoleColor.Blue);
+            Esthetisme.CouleurTexte("\n3. Supprimer un contact");
+            Esthetisme.CouleurTexte("\n4. Trier les contacts", ConsoleColor.Blue);
+            Esthetisme.CouleurTexte("\n5. Filtrer les contacts");
+            Esthetisme.CouleurTexte("\nQ. Quitter le programme", ConsoleColor.DarkRed);
 
-            Console.WriteLine("\nFaites votre choix:");
+            Console.WriteLine("\n\nFaites votre choix:");
             return Console.ReadLine();
         }
 
         // Methode pour sous menu Trier Contacts
-        public static string AfficherMenuTriContacts()
+        /*public static string AfficherMenuTriContacts()
         {
             Console.Clear();
 
 
-        }
+        }*/
     }
 }

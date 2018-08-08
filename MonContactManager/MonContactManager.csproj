@@ -43,8 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contact.cs" />
+    <Compile Include="GestionDonnees.cs" />
     <Compile Include="Menus.cs" />
-    <Compile Include="OutilsConsole.cs" />
+    <Compile Include="Esthetisme.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
